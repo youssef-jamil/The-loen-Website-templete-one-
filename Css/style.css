@@ -1,3 +1,4 @@
+/* Start Variables */
 :root {
   --main-color: #10cab7;
   --secondary-color: #2c4755;
@@ -117,18 +118,15 @@ body {
 
 .header .links .icon span:first-child {
   width: 100%;
-  font-weight: bold;
 }
 
 .header .links .icon span:nth-child(2) {
   width: 60%;
-  font-weight: bold;
   transition: var(--main-duration);
 }
 
 .header .links .icon span:last-child {
   width: 100%;
-  font-weight: bold;
 }
 
 .header .links ul {
@@ -177,7 +175,7 @@ body {
 /* End Header */
 /* Start Landing Section */
 .landing {
-  background-image: url(../Image/aerial-view-doctor-writing-patient-daily-report-checklist.webp);
+  background-image: url(../image/aerial-view-doctor-writing-patient-daily-report-checklist.webp);
   background-size: cover;
   height: calc(100vh - 64px);
   position: relative;
@@ -240,11 +238,10 @@ body {
 }
 
 /* End Features */
-
-/*Start Services */
+/* Start Services  */
 .services {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .services .services-content {
@@ -269,17 +266,20 @@ body {
 .services .services-content .srv i {
   color: var(--main-color);
   flex-basis: 60px;
-  margin-right: 20px;
 }
 
-.services .services-content .srv h3 {
+.services .services-content .srv .text {
+  flex: 1;
+}
+
+.services .services-content .srv .text h3 {
   margin: 0 0 20px;
 }
 
-.services .services-content .srv p {
-  color: #777;
-  line-height: 1.3;
+.services .services-content .srv .text p {
+  color: #444;
   font-weight: 300;
+  line-height: 1.6;
 }
 
 .services .services-content .image {
@@ -299,11 +299,50 @@ body {
 }
 
 .services .services-content .image img {
-  width: 300px;
+  width: 260px;
 }
 
 @media (max-width: 1199px) {
-  .image-service {
+  .image-column {
     display: none;
   }
 }
+
+/* Start Services  */
+/* Start Portfolio */
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+
+.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 80px;
+}
+
+.portfolio .portfolio-content .card {
+  background-color: white;
+}
+
+.portfolio .portfolio-content .card img {
+  max-width: 100%;
+}
+
+.portfolio .portfolio-content .card .info {
+  padding: 20px;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+  margin: 0;
+}
+
+.portfolio .portfolio-content .card .info p {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* End Portfolio */

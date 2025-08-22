@@ -6,9 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="Template One" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leon | Template One</title>
+  <!-- Main Template CSS File -->
   <link rel="stylesheet" href="Css/style.css" />
+  <!-- Render All Elements Normally -->
   <link rel="stylesheet" href="Css/normalize_css.css" />
-  <!--Font Icon-->
+  <!-- Font Awesome Library -->
   <link rel="stylesheet" href="./Css/all.min.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,40 +19,38 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <title>Loea</title>
 </head>
 
 <body>
-  <!--* Start Header -->
+  <!-- Start Header -->
   <div class="header">
     <div class="container">
-      <img src="image/logo.png" alt="Logo" class="logo">
+      <img decoding="async" class="logo" src="image/logo.png" alt="" />
       <div class="links">
         <span class="icon">
           <span></span>
           <span></span>
           <span></span>
         </span>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <!--* End Header -->
-  <!--* Start Landing Page -->
+  <!-- End Header -->
+  <!-- Start Landing Section -->
   <div class="landing">
     <div class="intro-text">
       <h1>Hello There</h1>
-      <p>We are leon - Super creative & Minimal Agency Web Template</p>
+      <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
     </div>
   </div>
-  <!--* End Landing Page -->
-  <!--* Start Features-->
+  <!-- End Landing Section -->
+  <!-- Start Features -->
   <div class="features">
     <div class="container">
       <div class="feat">
@@ -69,9 +70,9 @@
       </div>
     </div>
   </div>
-  <!--* End Features -->
+  <!-- End Features -->
   <!--* Start Services -->
-  <div class="services">
+  <div class="services" id="services">
     <div class="container">
       <h2 class="special-heading">Services</h2>
       <p>Don't be busy, be productive</p>
@@ -131,8 +132,40 @@
           </div>
         </div>
       </div>
-
-
+    </div>
+  </div>
+  <!-- End Services -->
+  <!-- Start Portfolio -->
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="special-heading">Portfolio</h2>
+      <p>If you do it right, it will last forever.</p>
+      <div class="portfolio-content">
+        <div class="card">
+          <img decoding="async" src="image/portfolio-1.webp" alt="" />
+          <div class="info">
+            <h3>Project Here</h3>
+            <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img decoding="async" src="image/portfolio-2.webp" alt="" />
+          <div class="info">
+            <h3>Project Here</h3>
+            <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img decoding="async" src="image/portfolio-3.webp" alt="" />
+          <div class="info">
+            <h3>Project Here</h3>
+            <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio -->
 </body>
 
 </html>
