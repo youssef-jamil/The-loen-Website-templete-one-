@@ -440,3 +440,94 @@ body {
 }
 
 /* End About */
+
+/* Start Contact */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+
+.contact .info {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+
+.contact .info .label {
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.contact .info .email-link {
+  display: block;
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.contact .info .social {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover animation */
+.social-icon:hover {
+  transform: scale(1.3) translateY(-5px);
+  color: #10cab7;
+}
+
+/* Optional bounce animation */
+.social-icon:hover i {
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.contact .info .social i {
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 767px) {
+
+  .contact .info .label,
+  .contact .info .link {
+    font-size: 25px;
+  }
+}
+
+
+
+/* End Contact */
+/* Start Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+/* End Footer */
